@@ -84,12 +84,12 @@ Place thumbnail images in the `public/images` folder.
 
 ### Project Page
 
-<img src="https://github.com/PrimeAcademy/weekend-6-portfolio/raw/master/wireframes/project_page.png" width="560">
+<img src="wireframes/project_page.png" width="560">
 
 
 ### Admin Page
 
-<img src="https://github.com/PrimeAcademy/weekend-6-portfolio/raw/master/wireframes/admin_page.png" width="560">
+<img src="wireframes/admin_page.png" width="560">
 
 ## Stretch Goals
 
