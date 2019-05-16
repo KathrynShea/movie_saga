@@ -2,37 +2,19 @@
 
 For this weekend challenge, you'll be building mindfulness application: an image carousel tagging app!  
 
-## Setup
+## Database Setup
 
 > **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
 
 1. Create a database named `saga_weekend`
-1. Run the following SQL using the `saga_weekend` database:
+2. Run the queries from `database.sql` on the `saga_weekend` database.
+3. You will need to create the junction table between the `images` and `tags` tables! Your app will be populating this new table.
 
-```SQL
-CREATE TABLE "tags" (
-    "id" SERIAL PRIMARY KEY,
-    "name" varchar(255) NOT NULL
-);
-
-CREATE TABLE "projects" (
-    "id" SERIAL PRIMARY KEY,
-    "name" varchar(255) NOT NULL,
-    "description" varchar(2048),
-    "thumbnail" varchar(2048), 
-    "website" varchar(2048),
-    "github" varchar(2048),
-    "date_completed" date,
-    "tag_id" INT REFERENCES "tags"
-);
-
-INSERT INTO "tags" ("name") 
-VALUES ('React'), ('jQuery'), ('Node'), ('SQL'), ('Redux'), ('HTML');
-```
+## Install Dependencies
 
 1. `npm install`
-1. `npm run server`
-1. `npm run client`
+2. `npm run server`
+3. `npm run client`
 
 ## Notes
 
@@ -43,10 +25,8 @@ We've given you some starter tags in the database. Feel free to change or add so
  ### Images
  We've added some abstract images in the `public/images` folder, and the database is set up to use them.
 
- ### Relationship
- Tags can be used by many different images.
- Images can have multiple tags.
-
+ ### Relationships
+ Tags can be applied to many different images. Images can have multiple tags. This is Many-to-Many! Junction Table time!
  
 
 **Do not implement image upload for base mode.**
@@ -91,14 +71,10 @@ You can build this! Other components from Material-UI are fine.
 
 > NOTE: Feel free to modify the styling and layout of content on the page. 
 
-### Project Page
+### Main View
 
-<img src="wireframes/project_page.png" width="560">
+<img src="wireframes/carousel-page.png" width="800">
 
-
-### Admin Page
-
-<img src="wireframes/admin_page.png" width="560">
 
 ## Stretch Goals
 

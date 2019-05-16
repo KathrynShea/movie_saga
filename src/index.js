@@ -18,17 +18,17 @@ function* rootSaga() {
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
 
-// Used to store projects returned from the server
-const projects = (state = [], action) => {
+// Used to store images returned from the server
+const images = (state = [], action) => {
     switch (action.type) {
-        case 'SET_PROJECTS':
+        case 'SET_IMAGES':
             return action.payload;
         default:
             return state;
     }
 }
 
-// Used to store the project tags (e.g. 'React', 'jQuery', 'Angular', 'Node.js')
+// Used to store the iamges tags (e.g. 'Inspirational', 'Calming', 'Energy', etc.)
 const tags = (state = [], action) => {
     switch (action.type) {
         case 'SET_TAGS':
@@ -41,7 +41,7 @@ const tags = (state = [], action) => {
 // Create one store that all components can use
 const storeInstance = createStore(
     combineReducers({
-        projects,
+        projects: images,
         tags,
     }),
     // Add sagaMiddleware to our store
