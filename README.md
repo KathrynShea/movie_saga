@@ -88,12 +88,12 @@ You can build this! Other components from Material-UI are fine.
 
 ### Project Page
 
-<img src="wireframes/carousel-page.png" width="560">
+<img src="wireframes/carousel-page.png" width="800">
 
 
 ### Admin Page
 
-<img src="wireframes/admin_page.png" width="560">
+<img src="wireframes/admin_page.png" width="800">
 
 ## Stretch Goals
 
