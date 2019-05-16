@@ -1,4 +1,4 @@
-# React Redux with Sagas
+# React-Redux with Sagas
 
 For this weekend challenge, you'll be building mindfulness application: an image carousel tagging app!  
 
@@ -55,26 +55,30 @@ We've given you some starter tags in the database. Feel free to change or add so
 ## Feature List
 
 > NOTE: Start by taking inventory of the existing code. Part of the work for setting up sagas has been done for you.
+## Back-End
 
+### Database
+- [x] Tag, Image tables 
+- [ ] Create a Junction Table for storing the tags associated with the images
+
+### Routes
+- [ ] GET `/api/tags` -- Should return all tags
+- [ ] GET `/api/images` -- Should return all images, and tags associated with those images.
+- [ ] POST `/api/images/addtag` -- Should add a tag associated with an image
+
+
+## Front End
 
 ### Carousel
 
 ** DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH THING ** 
 You can build this! Other components from Material-UI are fine.
 
-- [ ] Client side route that displays a single image at a time, using data from database.
-- [ ] Each image should have an ability to cycle through to the next/previous image. 
+- [ ] Client-side view that displays a single image at a time, using data from database.
+- [ ] Each image should have an ability to cycle through to the next/previous image. These should always work -- if you hit next on the last picture, it should go to the first image.
 - [ ] With each image, users should be able to assign tags to the current image and save in the database. For base mode, duplicate tags are fine.
 - [ ] Use Sagas for API requests to your server
-- [ ] 
 
-### Admin Page
-
-- [ ] Client side route that displays a form allowing you to add a new project to your portfolio
-- [ ] Include a drop down menu with a list of tags
-- [ ] Send data to the server and notify the user of success or failure
-- [ ] List projects by name and allow the user to delete them
-- [ ] Include a button that navigates to the project page
 
 ### General Tasks
 
@@ -99,5 +103,7 @@ You can build this! Other components from Material-UI are fine.
 
 - [ ] Give each tag associated to an image a different color
 - [ ] Improve styling on the page using Material UI
-- [ ] Create a view that can pull statistics 
-- [ ] Implement additional features of the GitHub API
+- [ ] Create a view that can pull statistics -- How many images have X tag, for example. Think about the data you can access!
+- [ ] Implement a form to add new tags and/or images
+- [ ] Animate it -- Look into transitions
+- [ ] Allow users to delete tags, if 
