@@ -38,7 +38,7 @@ We've given you some starter tags in the database. Feel free to change or add so
 ## Back-End
 
 ### Database
-- [x] Tag, Image tables 
+- [x] Create Tag, Image tables 
 - [ ] Create a Junction Table for storing the tags associated with the images
 
 ### Routes
@@ -78,9 +78,12 @@ You can build this! Other components from Material-UI are fine.
 
 ## Stretch Goals
 
+- [ ] Animate it -- Look into transitions -- give us a nice fade in/out, or slide in, or something aesthetically pleasing
+- [ ] Allow users to delete tags from an image.
 - [ ] Give each tag associated to an image a different color
 - [ ] Improve styling on the page using Material UI
+  - [ ] Make it Responsive (Research Grid)
+  - [ ] Give it a theme
 - [ ] Create a view that can pull statistics -- How many images have X tag, for example. Think about the data you can access!
 - [ ] Implement a form to add new tags and/or images
-- [ ] Animate it -- Look into transitions
-- [ ] Allow users to delete tags from an image.
+
