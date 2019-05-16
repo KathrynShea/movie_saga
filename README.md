@@ -106,4 +106,4 @@ You can build this! Other components from Material-UI are fine.
 - [ ] Create a view that can pull statistics -- How many images have X tag, for example. Think about the data you can access!
 - [ ] Implement a form to add new tags and/or images
 - [ ] Animate it -- Look into transitions
-- [ ] Allow users to delete tags, if 
+- [ ] Allow users to delete tags. If the tag is used, SQL will complain. Research `ON DELETE CASCADE`
