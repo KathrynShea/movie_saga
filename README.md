@@ -86,14 +86,10 @@ You can build this! Other components from Material-UI are fine.
 
 > NOTE: Feel free to modify the styling and layout of content on the page. 
 
-### Project Page
+### Main View
 
 <img src="wireframes/carousel-page.png" width="800">
 
-
-### Admin Page
-
-<img src="wireframes/admin_page.png" width="800">
 
 ## Stretch Goals
 
