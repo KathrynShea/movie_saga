@@ -88,7 +88,7 @@ You can build this! Other components from Material-UI are fine.
 
 ### Project Page
 
-<img src="wireframes/project_page.png" width="560">
+<img src="wireframes/carousel-page.png" width="560">
 
 
 ### Admin Page
