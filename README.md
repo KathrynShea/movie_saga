@@ -69,9 +69,10 @@ We've given you some starter tags in the database. Feel free to change or add so
 
 ## Front End
 
-### Carousel
+### Carousel 
 
-** DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH THING ** 
+** DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH (MUI STEPPER) THING **
+
 You can build this! Other components from Material-UI are fine.
 
 - [ ] Client-side view that displays a single image at a time, using data from database.
