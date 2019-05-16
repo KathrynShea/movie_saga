@@ -28,7 +28,7 @@ const images = (state = [], action) => {
     }
 }
 
-// Used to store the iamges tags (e.g. 'Inspirational', 'Calming', 'Energy', etc.)
+// Used to store the images tags (e.g. 'Inspirational', 'Calming', 'Energy', etc.)
 const tags = (state = [], action) => {
     switch (action.type) {
         case 'SET_TAGS':
