@@ -1,13 +1,13 @@
 # React Redux with Sagas
 
-For this weekend challenge, you'll be building a portfolio site to showcase your work. 
+For this weekend challenge, you'll be building mindfulness application: an image carousel tagging app!  
 
 ## Setup
 
 > **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
 
-1. Create a database named `portfolio`
-1. Run the following SQL using the `portfolio` database:
+1. Create a database named `saga_weekend`
+1. Run the following SQL using the `saga_weekend` database:
 
 ```SQL
 CREATE TABLE "tags" (
@@ -38,15 +38,16 @@ VALUES ('React'), ('jQuery'), ('Node'), ('SQL'), ('Redux'), ('HTML');
 
 ### Tags
 
-We've given you some starter tags. Feel free to change or add some.
+We've given you some starter tags in the database. Feel free to change or add some with Postico.
+ 
+ ### Images
+ We've added some abstract images in the `public/images` folder, and the database is set up to use them.
 
-For base mode, you should only include **one** tag per project. This gives you a one to many relationship. We'll cover many to many SQL queries next week. 
+ ### Relationship
+ Tags can be used by many different images.
+ Images can have multiple tags.
 
-### Screenshots
-
-To take a screenshot of your project, use `Command-Shift-4` on your mac. It turns the cursor into a crosshair, which you can drag to select a portion of your screen to capture. The image will appear on your desktop.
-
-Place thumbnail images in the `public/images` folder. 
+ 
 
 **Do not implement image upload for base mode.**
 
@@ -56,13 +57,16 @@ Place thumbnail images in the `public/images` folder.
 > NOTE: Start by taking inventory of the existing code. Part of the work for setting up sagas has been done for you.
 
 
-### Project Page
+### Carousel
 
-- [ ] Client side route that displays projects that are stored in the database
-- [ ] Each project should conditionally render a name, description, thumbnail, website, date complete and a tag. Many of the fields are optional, only show properties that aren't null.
-- [ ] Include a link to GitHub that opens in a new window
-- [ ] Add your name at the top of the page
+** DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH THING ** 
+You can build this! Other components from Material-UI are fine.
+
+- [ ] Client side route that displays a single image at a time, using data from database.
+- [ ] Each image should have an ability to cycle through to the next/previous image. 
+- [ ] With each image, users should be able to assign tags to the current image and save in the database. For base mode, duplicate tags are fine.
 - [ ] Use Sagas for API requests to your server
+- [ ] 
 
 ### Admin Page
 
@@ -93,7 +97,7 @@ Place thumbnail images in the `public/images` folder.
 
 ## Stretch Goals
 
-- [ ] Use the GitHub API to get user information to display at the top of the page
+- [ ] Give each tag associated to an image a different color
 - [ ] Improve styling on the page using Material UI
-- [ ] Include a form on the admin page for adding new tags
+- [ ] Create a view that can pull statistics 
 - [ ] Implement additional features of the GitHub API
