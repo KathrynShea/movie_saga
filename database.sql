@@ -13,7 +13,7 @@ INSERT INTO "images" ("title", "file")
 VALUES 
 ('Abstract Shapes', 'AbstractShapes.jpg'),
 ('Chroma Blast', 'Chroma.jpg'),
-('Color Burst', 'Color Burst.jpg'),
+('Color Burst', 'ColorBurst.jpg'),
 ('Flower', 'Flower.jpg'),
 ('Reflection', 'Reflection.jpg');
 
