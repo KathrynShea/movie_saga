@@ -1,6 +1,6 @@
 # React-Redux with Sagas
 
-For this weekend challenge, you'll be building mindfulness application: an image carousel tagging app!  
+For this weekend challenge you'll be building a mindfulness application: an image carousel tagging app!  
 
 ## Database Setup
 
@@ -35,6 +35,7 @@ We've given you some starter tags in the database. Feel free to change or add so
 ## Feature List
 
 > NOTE: Start by taking inventory of the existing code. Part of the work for setting up sagas has been done for you.
+
 ## Back-End
 
 ### Database
@@ -42,12 +43,14 @@ We've given you some starter tags in the database. Feel free to change or add so
 - [ ] Create a Junction Table for storing the tags associated with the images
 
 ### Routes
+Feel free to make up your own. You may need others beyond these:
+
 - [ ] GET `/api/tags` -- Should return all tags
-- [ ] GET `/api/images` -- Should return all images, and tags associated with those images.
-- [ ] POST `/api/images/addtag` -- Should add a tag associated with an image
+- [ ] GET `/api/images` -- Should return all images and the tags associated with each image (JOIN!)
+- [ ] POST `/api/images/addtag` -- Should add a tag associated with an image to your junction table.
 
 
-## Front End
+## Front-End
 
 ### Carousel 
 
