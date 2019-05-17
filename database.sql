@@ -1,7 +1,7 @@
 CREATE TABLE "images" (
   "id" SERIAL PRIMARY KEY,
   "title" VARCHAR(120) NOT NULL,
-  "file"  VARCHAR(120) NOT NULL
+  "path"  VARCHAR(120) NOT NULL
 );
 
 CREATE TABLE "tags" (
@@ -9,13 +9,13 @@ CREATE TABLE "tags" (
   "name" VARCHAR(80) NOT NULL
 );
 
-INSERT INTO "images" ("title", "file")
+INSERT INTO "images" ("title", "path")
 VALUES 
-('Abstract Shapes', 'AbstractShapes.jpg'),
-('Chroma Blast', 'Chroma.jpg'),
-('Color Burst', 'ColorBurst.jpg'),
-('Flower', 'Flower.jpg'),
-('Reflection', 'Reflection.jpg');
+('Abstract Shapes', 'images/AbstractShapes.jpg'),
+('Chroma Blast', 'images/Chroma.jpg'),
+('Color Burst', 'images/ColorBurst.jpg'),
+('Flower', 'images/Flower.jpg'),
+('Reflection', 'images/Reflection.jpg');
 
 INSERT INTO "tags" ("name")
 VALUES 
