@@ -1,10 +1,10 @@
 # React-Redux with Sagas
 
+> **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
+
 For this weekend challenge you'll be building a mindfulness application: an image carousel tagging app!  
 
 ## Database Setup
-
-> **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
 
 1. Create a database named `saga_weekend`
 2. Run the queries from `database.sql` on the `saga_weekend` database.
