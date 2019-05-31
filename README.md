@@ -6,9 +6,9 @@ For this weekend challenge you'll be building a mindfulness application: an imag
 
 ## Database Setup
 
-1. Create a database named `saga_weekend`
-2. Run the queries from `database.sql` on the `saga_weekend` database.
-3. You will need to create the junction table between the `images` and `tags` tables! Your app will be populating this new table.
+1. Create a database named `saga_movies_weekend`
+2. Run the queries from `database.sql` on the `saga_movies_weekend` database.
+3. You will need to create the junction table between the `movies` and `genres` tables! Your app will be populating this new table.
 
 ## Install Dependencies
 
@@ -19,14 +19,13 @@ For this weekend challenge you'll be building a mindfulness application: an imag
 ## Notes
 
 ### Tags
-
-We've given you some starter tags in the database. Feel free to change or add some with Postico.
+We've given you some starter genres in the database. Feel free to change or add some with Postico.
  
- ### Images
- We've added some abstract images in the `public/images` folder, and the database is set up to use them.
+### Movies
+We've added some movie posters in the `public/images` folder, and the database is set up to use them.
 
- ### Relationships
- Tags can be applied to many different images. Images can have multiple tags. This is Many-to-Many! Junction Table time!
+### Relationships
+Genres can be applied to many different movies. Movies can have multiple genres. This is Many-to-Many! Junction Table time!
  
 
 **Do not implement image upload for base mode.**
@@ -39,18 +38,24 @@ We've given you some starter tags in the database. Feel free to change or add so
 ## Back-End
 
 ### Database
-- [x] Create Tag, Image tables 
-- [ ] Create a Junction Table for storing the tags associated with the images
+- [x] Create Movie, Genre tables 
+- [ ] Create a Junction Table for storing the genres associated with the movies
 
 ### Routes
 Feel free to make up your own. You may need others beyond these:
 
-- [ ] GET `/api/tags` -- Should return all tags
-- [ ] GET `/api/images` -- Should return all images and the tags associated with each image (JOIN!)
-- [ ] POST `/api/images/addtag` -- Should add a tag associated with an image to your junction table.
+- [ ] GET `/api/movies` -- Should return all tags
+- [ ] GET `/api/genres` -- Should return all images and the tags associated with each image (JOIN!)
+- [ ] POST `/api/movies/add-genre` -- Should add a genre associated with an image to your junction table.
 
 
 ## Front-End
+
+### Search Functionality
+
+
+
+### Details Page
 
 ### Carousel 
 
