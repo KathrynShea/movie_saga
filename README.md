@@ -77,10 +77,9 @@ You can build this! Other components from Material-UI are fine.
 
 > NOTE: Feel free to modify the styling and layout of content on the page. 
 
-### Main View
+### Video Demo
 
-<img src="wireframes/carousel-page.png" width="800">
-
+<iframe src="https://player.vimeo.com/video/343530927" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ## Stretch Goals
 
