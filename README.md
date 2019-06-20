@@ -2,13 +2,13 @@
 
 > **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
 
-For this weekend challenge you'll be building a mindfulness application: an image carousel tagging app!  
+For this weekend challenge you'll be building a movie application!  
 
 ## Database Setup
 
 1. Create a database named `saga_movies_weekend`
 2. Run the queries from `database.sql` on the `saga_movies_weekend` database.
-3. You will need to create the junction table between the `movies` and `genres` tables! Your app will be populating this new table.
+3. You will need to create the junction table between the `movies` and `genres` tables!
 
 ## Install Dependencies
 
@@ -27,67 +27,59 @@ We've added some movie posters in the `public/images` folder, and the database i
 ### Relationships
 Genres can be applied to many different movies. Movies can have multiple genres. This is Many-to-Many! Junction Table time!
 
-## Feature List
+## Video Wireframe
 
-**Do not implement image upload for base mode**
+[video ![Home Wireframe](/wireframes/home-wireframe.png)](https://vimeo.com/343530927)
+
+## Feature List
 
 > NOTE: Start by taking inventory of the existing code. Part of the work for setting up sagas has been done for you.
 
-## Back-End
+### Home / List Page
 
-### Database
-- [x] Create Movie, Genre tables 
-- [ ] Create a Junction Table for storing the genres associated with the movies
-
-### Routes
-You may need others beyond these:
-
-- [ ] GET `/api/movies` -- Should return all tags
-- [ ] GET `/api/genres` -- Should return all images and the tags associated with each image (JOIN!)
-- [ ] POST `/api/movies/add-genre` -- Should add a genre associated with an image to your junction table.
-
-
-## Front-End
-
-### Search Functionality
-
-
+This should display all of the movies in the movie database. When a movie poster is clicked, a user should be brought to the `/details` view.
 
 ### Details Page
 
-### Carousel 
+This should show all details **including genres**, for the selected movie.
 
-**DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH (MUI STEPPER) THING**
+The details page should have the buttons:
 
-You can build this! Other components from Material-UI are fine.
+- `Back to List` button, which should bring the user to the Home Page
+- `Edit` button, which should bring the user to the Edit Page
 
-- [ ] Client-side view that displays a single image at a time, using data from database.
-- [ ] Each image should have an ability to cycle through to the next/previous image. These should always work -- if you hit next on the last picture, it should go to the first image.
-- [ ] With each image, users should be able to assign tags to the current image and save in the database. For base mode, duplicate tags are fine.
-- [ ] Use Sagas for API requests to your server
+> Base functionality does not require the movie details to remain upon refresh of the browser.
 
+### Edit Page
+
+This should show:
+
+- an input field (for changing the movie title), for the selected movie.
+- a textarea (for changing the movie description)
+
+The details page should have the buttons:
+
+- `Cancel` button, which should bring the user to the Details Page
+- `Save` button, which should update the title and description in the database and bring the user to the Details Page
+
+> Base functionality does not require the current values (the existing movie title and description) to populate in the input and textarea.
+
+> Base functionality does not require the movie edit page to remember which movie was being edited upon refresh of the browser.
 
 ### General Tasks
 
+As one of your last projects, it's possible you will be sharing this with employers, so be sure to follow best practices and make it look good!
+
+- [ ] Invest some time in styling it up!
 - [ ] Commit your code frequently! You should have at 15+ commits on a project of this size. Use branches to help break down your features.
 - [ ] Comment your code.
 - [ ] Update this README to include a description of the project in your own words.
 
-## Wireframes
-
-> NOTE: Feel free to modify the styling and layout of content on the page. 
-
-### Video Demo
-
-https://vimeo.com/343530927
-
 ## Stretch Goals
 
-- [ ] Animate it -- Look into transitions -- give us a nice fade in/out, or slide in, or something aesthetically pleasing
-- [ ] Allow users to delete tags from an image.
-- [ ] Give each tag associated to an image a different color
-- [ ] Improve styling on the page using Material UI
-  - [ ] Make it Responsive (Research Grid)
-  - [ ] Give it a theme
-- [ ] Create a view that can pull statistics -- How many images have X tag, for example. Think about the data you can access!
-- [ ] Implement a form to add new tags and/or images
+- [ ] Display the current values in the input (title) and textarea (description) on the Edit Page 
+- [ ] Allow the user to refresh the details or edit page. The url for the details page would be something like `/details/1` for movie with id of `1`. Research [react router params](https://reacttraining.com/react-router/web/example/url-params).
+- [ ] Allow the user to add a genre to a movie.
+- [ ] Allow the user to remove a genre from a movie.
+- [ ] Only display the top 10 movies, and allow the user to search for movie titles with a search bar on the home page (you can do this on the client side or the server side, server side is a bigger stretch, but good practice).
+- [ ] Create an `Admin` page. Add a link from the `Home` page to the `Admin` page. The page should initially display a login form (an input for username and an input for password). When the user enters the correct username (`camera`) and password (`action`), the page should display a form to add genres to the database, and a list of all of the genres with an `x` to remove them from the database. Note: This isn't actually secure, but it's pretty fun, and really good practice.
