@@ -79,7 +79,7 @@ You can build this! Other components from Material-UI are fine.
 
 ### Video Demo
 
-<iframe src="https://player.vimeo.com/video/343530927" width="640" height="400" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+https://vimeo.com/343530927
 
 ## Stretch Goals
 
