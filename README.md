@@ -26,12 +26,10 @@ We've added some movie posters in the `public/images` folder, and the database i
 
 ### Relationships
 Genres can be applied to many different movies. Movies can have multiple genres. This is Many-to-Many! Junction Table time!
- 
-
-**Do not implement image upload for base mode.**
-
 
 ## Feature List
+
+**Do not implement image upload for base mode**
 
 > NOTE: Start by taking inventory of the existing code. Part of the work for setting up sagas has been done for you.
 
@@ -42,7 +40,7 @@ Genres can be applied to many different movies. Movies can have multiple genres.
 - [ ] Create a Junction Table for storing the genres associated with the movies
 
 ### Routes
-Feel free to make up your own. You may need others beyond these:
+You may need others beyond these:
 
 - [ ] GET `/api/movies` -- Should return all tags
 - [ ] GET `/api/genres` -- Should return all images and the tags associated with each image (JOIN!)
@@ -59,7 +57,7 @@ Feel free to make up your own. You may need others beyond these:
 
 ### Carousel 
 
-** DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH (MUI STEPPER) THING **
+**DO NOT USE ANY PREBUILT CAROUSEL NOR CAROUSEL-ISH (MUI STEPPER) THING**
 
 You can build this! Other components from Material-UI are fine.
 
@@ -94,4 +92,3 @@ You can build this! Other components from Material-UI are fine.
   - [ ] Give it a theme
 - [ ] Create a view that can pull statistics -- How many images have X tag, for example. Think about the data you can access!
 - [ ] Implement a form to add new tags and/or images
-
