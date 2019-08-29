@@ -2,7 +2,12 @@
 
 > **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
 
-For this weekend challenge you'll be building a movie application!  
+For this weekend challenge you'll be building a movie application!
+We'll be able to see movies that exist in our DB. We'll also be able to see detailed view for each individual movie, including genres associated with that movie. We'll also be able to edit our movie's information.
+
+## Video Wireframe
+
+[video ![Home Wireframe](/wireframes/home-wireframe.png)](https://vimeo.com/343530927)
 
 ## Database Setup
 
@@ -18,7 +23,7 @@ For this weekend challenge you'll be building a movie application!
 
 ## Notes
 
-### Tags
+### Genres
 We've given you some starter genres in the database. Feel free to change or add some with Postico.
  
 ### Movies
@@ -26,10 +31,6 @@ We've added some movie posters in the `public/images` folder, and the database i
 
 ### Relationships
 Genres can be applied to many different movies. Movies can have multiple genres. This is Many-to-Many! Junction Table time!
-
-## Video Wireframe
-
-[video ![Home Wireframe](/wireframes/home-wireframe.png)](https://vimeo.com/343530927)
 
 ## Feature List
 
