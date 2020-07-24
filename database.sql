@@ -1,14 +1,14 @@
 CREATE TABLE "movies" (
-  "id" SERIAL PRIMARY KEY,
-  "title" VARCHAR(120) NOT NULL,
-  "poster"  VARCHAR(120) NOT NULL,
+  "id" SERIAL PRIMARY KEY,
+  "title" VARCHAR(120) NOT NULL,
+  "poster"  VARCHAR(120) NOT NULL,
   "description" TEXT NOT NULL
 );
 
 -- movies can have multiple genres
 CREATE TABLE "genres" (
-  "id" SERIAL PRIMARY KEY,
-  "name" VARCHAR(80) NOT NULL
+  "id" SERIAL PRIMARY KEY,
+  "name" VARCHAR(80) NOT NULL
 );
 
 
