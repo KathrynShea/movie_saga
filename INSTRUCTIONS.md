@@ -21,7 +21,7 @@ We'll be able to see movies that exist in our DB. We'll also be able to see deta
 ## Notes
 
 ### Genres
-We've given you some starter genres in the database. Feel free to change or add some with Postico.
+We've given you some starter genres in the database. Feel free to change or add some with Postico. You'll need to write out the whole GET flow to get the genres from your database to your client.
  
 ### Movies
 We've added some movie posters in the `public/images` folder, and the database is set up to use them.
