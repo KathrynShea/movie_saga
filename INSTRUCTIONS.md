@@ -64,7 +64,8 @@ The Add Movie page should have the buttons:
 - `Cancel` button, which should bring the user to the Home/List Page
 - `Save` button, which should update the title and description in the database and bring the user to the Home/List Page (which now has the new movie)
 
-> Hint: Make the Movie, then make the genre for that movie. (You'll probably need SQL `RETURNING "id"`)
+> Hint: Look at the /api/movie POST route -- it's been made already
+> Hint: You'll want to use the genres that are in the db for your dropdown
 
 > Base functionality does not require being able to select more than one genre for a new movie
 
