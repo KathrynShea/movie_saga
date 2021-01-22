@@ -9,8 +9,7 @@ We'll be able to see movies that exist in our DB. We'll also be able to see deta
 ## Database Setup
 
 1. Create a database named `saga_movies_weekend`
-2. Run the queries from `database.sql` on the `saga_movies_weekend` database.
-3. A movie could have many genres. You will need to create the junction table between the `movies` and `genres` tables! It will be helpful to have some data for that junction table added.
+2. Run the queries from `database.sql` on the `saga_movies_weekend` database
 
 ## Install Dependencies
 
@@ -35,17 +34,19 @@ Genres can be applied to many different movies. Movies can have multiple genres.
 
 ### Home / List Page
 
-This should display all of the movies in the movie database. When a movie poster is clicked, a user should be brought to the `/details` view.
+This view is completed already! It displays all of the movies in the movie database. 
+
+TODO: When a movie poster is clicked, a user should be brought to the `/details` view.
 
 ### Details Page
 
-This should show all details **including genres**, for the selected movie.
+This should show all details **including ALL genres**, for the selected movie.
 
  > Hint : You can make a GET request for a specific movie.
 
 The details page should have the button:
 
-- `Back to List` button, which should bring the user to the Home Page
+- `Back to List` button, which should bring the user to the Home/List Page
 
 
 > Base functionality does not require the movie details to load correctly after refresh of the browser.
@@ -81,6 +82,8 @@ As one of your last projects, it's possible you will be sharing this with employ
 - [ ] Comment your code.
 - [ ] Update this README to include a description of the project in your own words.
 
+---
+
 ## Stretch Goals
 
 
@@ -98,7 +101,7 @@ The edit page should have the buttons:
 - `Cancel` button, which should bring the user to the Details Page
 - `Save` button, which should update the title and description in the database and bring the user to the Details Page
 
-### Other Goals
+### Other Ideas
 
 - [ ] Display the current values in the input (title) and textarea (description) on the Edit Page
 - [ ] Display all genres on movie list page. Research [array_agg](https://stackoverflow.com/questions/43458174/how-to-save-and-return-javascript-object-with-subarray-in-normalized-sql) to make this possible.
