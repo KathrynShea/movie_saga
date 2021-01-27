@@ -1,8 +1,10 @@
 # React-Redux with Sagas
 
-For this weekend challenge you'll be building a movie management application!
+For this weekend challenge you'll be expanding on a movie management application!
 
-We'll be able to see movies that exist in our DB. We'll also be able to see detailed view for each individual movie, including genres associated with that movie. We'll also be able to add a new movie's information.
+We're already able to see movies that exist in our DB.
+
+We'll need to be able to see detailed view for each individual movie, including genres associated with that movie. We also need to able to add a new movie's information.
 
 
 
@@ -19,14 +21,15 @@ We'll be able to see movies that exist in our DB. We'll also be able to see deta
 
 ## Notes
 
-### Genres
-We've given you some starter genres in the database. Feel free to change or add some with Postico. You'll need to write out the whole GET flow to get the genres from your database to your client.
- 
-### Movies
-We've added some movie posters in the `public/images` folder, and the database is set up to use them.
-
 ### Relationships
 Genres can be applied to many different movies. Movies can have multiple genres. This is Many-to-Many! Junction Table time!
+
+We've given you the database complete with a junction table for `movies_genres`. There is test data that you can add to if you like, as what we've given you is just genres for Avatar and Beauty and the Beast. 
+ 
+### Movies
+We've added some movie posters in the `public/images` folder, and the database is set up to use them. If you want your own posters, you'll want to add the files there!
+
+
 
 ## Feature List
 
@@ -36,13 +39,15 @@ Genres can be applied to many different movies. Movies can have multiple genres.
 
 This view is completed already! It displays all of the movies in the movie database. 
 
-TODO: When a movie poster is clicked, a user should be brought to the `/details` view.
+TODO: When a movie poster is clicked, a user should be brought to the `/details` view for that movie.
+
+TODO: Have a way to get to the Add Movie Page
 
 ### Details Page
 
-This should show all details **including ALL genres**, for the selected movie.
+This should show all details **including ALL genres**, for the selected movie. You will need to store this data in redux!
 
- > Hint : You can make a GET request for a specific movie.
+ > Hint : You can make a GET request for a specific movie. Remember `req.params` and `:id`?
 
 The details page should have the button:
 
@@ -84,8 +89,19 @@ As one of your last projects, it's possible you will be sharing this with employ
 
 ---
 
+
+## SQL Tasks
+Using our DB structure as a guide, answer the questions found in the `sql-word-problems.md` file. You'll want to test your sql with postico!
+
+
+
+
+
 ## Stretch Goals
 
+### Refresh on Details Page
+Allow the app to maintain on refresh our details page.
+Research [React Router URL PARAMS](https://reactrouter.com/web/example/url-params) 
 
 ### Edit Page (Stretch)
 Add to the detail page an edit button that brings the user to the edit page.
@@ -105,7 +121,8 @@ The edit page should have the buttons:
 
 - [ ] Display the current values in the input (title) and textarea (description) on the Edit Page
 - [ ] Display all genres on movie list page. Research [array_agg](https://stackoverflow.com/questions/43458174/how-to-save-and-return-javascript-object-with-subarray-in-normalized-sql) to make this possible.
-- [ ] Allow the user to select many genres
+- [ ] Allow the user to select many genres as they add
+    - You'll have to change the INSERT statement
 - [ ] Move sagas and reducers out of your `index.js` and into separate files (ideally in `src/redux/reducers` and `src/redux/sagas` folders).
 - [ ] Allow the user to refresh the details or edit page. The url for the details page would be something like `/details/1` for movie with id of `1`. Research [react router params](https://reacttraining.com/react-router/web/example/url-params).
 - [ ] Allow the user to add a genre to a movie.
