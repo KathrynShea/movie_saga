@@ -8,7 +8,7 @@ CREATE TABLE "movies" (
   "description" TEXT NOT NULL
 );
 
--- movies can have multiple genres
+
 CREATE TABLE "genres" (
   "id" SERIAL PRIMARY KEY,
   "name" VARCHAR(80) NOT NULL
@@ -16,6 +16,8 @@ CREATE TABLE "genres" (
 
 
 -- JUNCTION TABLE
+-- Movies can have multiple genres and each genre can be applied to multiple movies
+-- This is many-to-many!
 CREATE TABLE "movies_genres" (
   "id" SERIAL PRIMARY KEY,
   "movie_id" INT REFERENCES "movies" NOT NULL,
@@ -60,6 +62,10 @@ VALUES
 ('Superhero');
 
 
--- starter movie->genres
+-- starter movies and genres data
 INSERT INTO "movies_genres" ("movie_id", "genre_id")
-VALUES (1,1), (1,3), (1,4), (2, 1), (2, 11), (2, 12);
+VALUES 
+(1,1), (1,3), (1,4), 
+(2,1), (2,11), (2,12)
+(3,3),
+(4,4), (4,7);
