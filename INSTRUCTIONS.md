@@ -1,17 +1,22 @@
-# React-Redux with Sagas
+# React-Redux with Sagas and SQL Practice
 
-For this weekend challenge you'll be expanding on a movie management application!
+This week you have two separate parts to work on:
 
-We're already able to see movies that exist in our DB.
+1. Adding features to an existing Movie App with React-Redux and Sagas
+2. Practicing SQL
 
-We'll need to be able to see detailed view for each individual movie, including genres associated with that movie. We also need to able to add a new movie's information.
+Be sure to do both parts!
 
+---
 
+## Part 1: Add Features to our Movie App
+
+For this weekend challenge you'll be expanding on a movie management application! We're already able to see movies that exist in our DB. We'll need to be able to see detailed view for each individual movie, including genres associated with that movie. We also need to able to add a new movie's information.
 
 ## Database Setup
 
 1. Create a database named `saga_movies_weekend`
-2. Run the queries from `database.sql` on the `saga_movies_weekend` database
+2. Run the queries from `/database/database.sql` on the `saga_movies_weekend` database
 
 ## Install Dependencies
 
@@ -24,12 +29,12 @@ We'll need to be able to see detailed view for each individual movie, including 
 ### Relationships
 Genres can be applied to many different movies. Movies can have multiple genres. This is Many-to-Many! Junction Table time!
 
-We've given you the database complete with a junction table for `movies_genres`. There is test data that you can add to if you like, as what we've given you is just genres for Avatar and Beauty and the Beast. 
+We've given you the database complete with a junction table and data for `movies_genres`.
  
 ### Movies
 We've added some movie posters in the `public/images` folder, and the database is set up to use them. If you want your own posters, you'll want to add the files there!
 
-
+---
 
 ## Feature List
 
@@ -39,20 +44,16 @@ We've added some movie posters in the `public/images` folder, and the database i
 
 This view is completed already! It displays all of the movies in the movie database. 
 
-TODO: When a movie poster is clicked, a user should be brought to the `/details` view for that movie.
-
-TODO: Have a way to get to the Add Movie Page
+- TODO: When a movie poster is clicked, a user should be brought to the `/details` view for that movie.
+- TODO: Have a way to get to the Add Movie Page
 
 ### Details Page
 
-This should show all details **including ALL genres**, for the selected movie. You will need to store this data in redux!
+This should show all details **including ALL genres** for the selected movie. You will need to store this data in redux!
 
  > Hint : You can make a GET request for a specific movie. Remember `req.params` and `:id`?
 
-The details page should have the button:
-
-- `Back to List` button, which should bring the user to the Home/List Page
-
+- TODO: The details page should have a `Back to List` button, which should bring the user to the Home/List Page
 
 > Base functionality does not require the movie details to load correctly after refresh of the browser.
 
@@ -70,13 +71,15 @@ The Add Movie page should have the buttons:
 - `Cancel` button, which should bring the user to the Home/List Page
 - `Save` button, which should update the title and description in the database and bring the user to the Home/List Page (which now has the new movie)
 
+**Base functionality does not require being able to select more than one genre for a new movie**
+
 > Hint: Look at the /api/movie POST route -- it's been made already
+
 > Hint: You'll want to use the genres that are in the db for your dropdown
 
-> Base functionality does not require being able to select more than one genre for a new movie
+---
 
-
-### General Tasks
+### General Considerations
 
 As one of your last projects, it's possible you will be sharing this with employers, so be sure to follow best practices and make it look good!
 
@@ -89,15 +92,13 @@ As one of your last projects, it's possible you will be sharing this with employ
 
 ---
 
+## Part 2: SQL Practice
 
-## SQL Tasks
-Using our DB structure as a guide, answer the questions found in the `sql-word-problems.md` file. You'll want to test your sql with postico!
+See the file: `/database/INSTRUCTIONS.md` for what to do to practice some fancy SQL. You'll want to test your sql with postico!
 
+---
 
-
-
-
-## Stretch Goals
+## Development Stretch Goals
 
 ### Refresh on Details Page
 Allow the app to maintain on refresh our details page.
@@ -105,7 +106,6 @@ Research [React Router URL PARAMS](https://reactrouter.com/web/example/url-param
 
 ### Edit Page (Stretch)
 Add to the detail page an edit button that brings the user to the edit page.
-
 
 This new page should show:
 
