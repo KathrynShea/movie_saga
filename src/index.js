@@ -2,17 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App.js';
-import registerServiceWorker from './registerServiceWorker';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 // Provider allows us to use redux within our react app
 import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 // Import saga middleware
 import createSagaMiddleware from 'redux-saga';
+import { takeEvery, put } from 'redux-saga/effects';
+import axios from 'axios';
 
 // Create the rootSaga generator function
 function* rootSaga() {
+    yield takeEvery('FETCH_MOVIES', fetchAllMovies);
+}
 
+function* fetchAllMovies() {
+    // get all movies from the DB
+    try {
+        const movies = yield axios.get('/api/movie');
+        console.log('get all:', movies.data);
+        yield put({ type: 'SET_MOVIES', payload: movies.data });
+
+    } catch {
+        console.log('get all error');
+    }
+        
 }
 
 // Create sagaMiddleware
@@ -51,6 +65,11 @@ const storeInstance = createStore(
 // Pass rootSaga into our sagaMiddleware
 sagaMiddleware.run(rootSaga);
 
-ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, 
-    document.getElementById('root'));
-registerServiceWorker();
+ReactDOM.render(
+    <React.StrictMode>
+        <Provider store={storeInstance}>
+        <App />
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
+);
