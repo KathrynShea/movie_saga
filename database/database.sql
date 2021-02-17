@@ -19,8 +19,8 @@ CREATE TABLE "genres" (
 -- Movies can have multiple genres and each genre can be applied to multiple movies
 -- This is many-to-many!
 CREATE TABLE "movies_genres" (
-  "id" SERIAL PRIMARY KEY,
-  "movie_id" INT REFERENCES "movies" NOT NULL,
+  "id" SERIAL PRIMARY KEY,
+  "movie_id" INT REFERENCES "movies" NOT NULL,
   "genre_id" INT REFERENCES "genres" NOT NULL
 );
 
