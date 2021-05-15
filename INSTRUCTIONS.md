@@ -69,11 +69,11 @@ This should show:
 The Add Movie page should have the buttons:
 
 - `Cancel` button, which should bring the user to the Home/List Page
-- `Save` button, which should update the title and description in the database and bring the user to the Home/List Page (which now has the new movie)
+- `Save` button, which should save these inputs in the database and bring the user to the Home/List Page (which now has the new movie)
 
 **Base functionality does not require being able to select more than one genre for a new movie**
 
-> Hint: Look at the /api/movie POST route -- it's been made already
+> Hint: Look at the /api/movie POST route -- it's been made already but is performing 2 queries: one to store the movie information and another to store the genre in the junction table.
 
 > Hint: You'll want to use the genres that are in the db for your dropdown
 
