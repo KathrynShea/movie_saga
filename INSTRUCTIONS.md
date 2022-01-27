@@ -11,7 +11,7 @@ Be sure to do both parts!
 
 ## Add the Detail View to our Movie App
 
-For this weekend challenge you'll be expanding on a movie management application! We're already able to see movies that exist in our DB. We'll need to be able to see detailed view for each individual movie, including all genres associated with that movie. This is a very common patten, to go from a list to showing more information about a single item. 
+For this weekend challenge you'll be expanding on a movie management application! We're already able to see movies that exist in our DB. We'll need to be able to see detailed view for each individual movie, including all genres associated with that movie. This is a very common pattern, to go from a list to showing more information about a single item. 
 
 ## Database Setup
 
