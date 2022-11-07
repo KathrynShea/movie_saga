@@ -65,17 +65,17 @@ VALUES
 -- starter movies and genres data
 INSERT INTO "movies_genres" ("movie_id", "genre_id")
 VALUES 
-(1,1), (1,3), (1,4),      -- Avatar
-(2,1), (2,11), (2,12),    -- Beauty
-(3,3),                    -- Cpt Marvel
-(4,4), (4,7),             -- Nemo
+(1,1), (1,7), (1,6),      -- Avatar
+(2,1), (2,9), (2,6),      -- Beauty
+(3,13),                   -- Cpt Marvel
+(4,4), (4,2),             -- Nemo
 (5,3),                    -- Gone Girl
-(6,12),                   -- Véronique
-(7,9),(7,2),              -- Bond
-(8,4),                    -- Pi
-(9,4),                    -- Monsters
-(10,4),                   -- Star Wars
+(6,6),                    -- Véronique
+(7,1),(7,6),              -- Bond
+(8,6),                    -- Pi
+(9,2),                    -- Monsters
+(10,12),                  -- Star Wars
 (11,6), (11,11),          -- Martian
-(12,8), (12,9),           -- Social Net
-(13,4), (13,10), (13,6),  -- Titanic
-(14,3), (14,2), (14,4);   -- Toy Story
+(12,6), (12,3),           -- Social Net
+(13,6), (13,10), (13,1),  -- Titanic
+(14,1), (14,2), (14,4);   -- Toy Story
