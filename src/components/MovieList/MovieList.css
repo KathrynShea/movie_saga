@@ -1,4 +1,22 @@
 .movies {
     display : flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.movie_title{
+    margin-bottom: 4px;
+    color: #EEEEEE;
+}
+
+*{
+    background-color: #222831;
+}
+
+h1{
+    color: #EEEEEE;
+}
+
+img{
+    box-shadow: 4px 3px 3px black;
 }

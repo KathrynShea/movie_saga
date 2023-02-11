@@ -2,7 +2,6 @@
   text-align: center;
 }
 
-
 .App-header {
   background-color: #222;
   height: 150px;
@@ -21,4 +20,27 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+h5{
+  background-color: #EEEEEE;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  padding:5px;
+  border-radius: 3px;
+  margin-left: 30%;
+}
+
+h2, h3 {
+  color: #EEEEEE;
+  margin-bottom: px;
+}
+
+ul{
+  list-style: none;
+}
+
+.back{
+  background-color: #EEEEEE;;
 }

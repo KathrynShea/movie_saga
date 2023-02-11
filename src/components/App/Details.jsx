@@ -33,16 +33,14 @@ function Details() {
       <div>
         <h2>{movie.title}</h2>
         <img src={movie.poster} />
-        <h3>Genres:</h3>
-        <ul>
-          {genreList.map((item) => (
-            <li>{item.name}</li>
-          ))}
-        </ul>
-        <h4>{movie.description}</h4>
+        <h3>Genres: {genreList.map((item) => (
+            <span>{item.name} </span>
+          ))}</h3>
+          
+        <h5>{movie.description}</h5>
       </div>
 
-      <button onClick={() => history.push("/")}>back to movies list</button>
+      <button class="back" onClick={() => history.push("/")}>Back to list</button>
     </>
   );
 }
