@@ -44,11 +44,11 @@ We've added some movie posters in the `public/images` folder, and the database i
 
 This view is completed already! It displays all of the movies in the movie database. 
 
-- TODO: When a movie poster is clicked, a user should be brought to the `/details` view for that movie.
+- TODO: When a movie poster is clicked, a user should be brought to the `/details` view for that movie.[x]
 
 ### Details Page
 
-This should show all details **including ALL genres** for the selected movie, including title, description, and the image, too! Use Sagas and Redux to handle these requests and data.
+This should show all details **including ALL genres** for the selected movie, including title, description, and the image, too! Use Sagas and Redux to handle these requests and data.[x]
 
 - TODO: The details page should have a `Back to List` button, which should bring the user to the Home/List Page [x]
 
